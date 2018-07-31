@@ -1,9 +1,17 @@
 class Piece
-  def initialize
+  attr_accessor :pos, :color, :board
 
+  def initialize(pos, color, board)
+    @pos = pos
+    @board = board
+    @color = color# :w or :b
   end
 
   def to_s
-    "piece"
+    "p"
+  end
+
+  def moves
+
   end
 end
